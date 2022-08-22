@@ -1,0 +1,8 @@
+resource_group_name     = "web-sql-db"
+resource_group_location = "central india"
+app_service_plan_name   = "appserviceplan-web-sql"
+linux_web_app           = "terraform-webapp-sql"
+sql_server_name         = "web-sql-server1"
+sql_database_name       = "productsDB"
+sql_admin_login         = "ambika"
+sql_admin_password      = "@Am012345678!"

@@ -1,0 +1,7 @@
+resource_group = "demo-resourcegroup"
+location ="central india"
+virtual_network = "vn1"
+subnet ="svn1"
+network_security ="ns"
+network_interface ="Testtrail-nic"
+virtual_machine = "vm"

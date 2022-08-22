@@ -1,0 +1,1895 @@
+{
+    "format_version": "1.1",
+    "terraform_version": "1.2.5",
+    "variables": {
+        "app_service_plan": {
+            "value": "webappplan"
+        },
+        "location": {
+            "value": "central india"
+        },
+        "rg_name": {
+            "value": "webapp_g1"
+        },
+        "web_service": {
+            "value": "wepappservice"
+        }
+    },
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_linux_web_app.app",
+                    "mode": "managed",
+                    "type": "azurerm_linux_web_app",
+                    "name": "app",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "app_settings": {
+                            "SOME_KEY": "some-value"
+                        },
+                        "auth_settings": [
+                            {
+                                "active_directory": [],
+                                "additional_login_parameters": {},
+                                "allowed_external_redirect_urls": [],
+                                "default_provider": "",
+                                "enabled": false,
+                                "facebook": [],
+                                "github": [],
+                                "google": [],
+                                "issuer": "",
+                                "microsoft": [],
+                                "runtime_version": "",
+                                "token_refresh_extension_hours": 0,
+                                "token_store_enabled": false,
+                                "twitter": [],
+                                "unauthenticated_client_action": ""
+                            }
+                        ],
+                        "backup": [],
+                        "client_affinity_enabled": false,
+                        "client_certificate_enabled": false,
+                        "client_certificate_mode": "Required",
+                        "connection_string": [],
+                        "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                        "default_hostname": "wepappservice.azurewebsites.net",
+                        "enabled": true,
+                        "https_only": false,
+                        "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                        "identity": [],
+                        "key_vault_reference_identity_id": "SystemAssigned",
+                        "kind": "app,linux",
+                        "location": "centralindia",
+                        "logs": [],
+                        "name": "wepappservice",
+                        "outbound_ip_address_list": [
+                            "20.207.85.205",
+                            "20.204.225.3",
+                            "20.207.85.101",
+                            "20.207.85.252",
+                            "20.207.82.86",
+                            "20.207.86.8",
+                            "20.192.170.10"
+                        ],
+                        "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                        "possible_outbound_ip_address_list": [
+                            "20.207.85.205",
+                            "20.204.225.3",
+                            "20.207.85.101",
+                            "20.207.85.252",
+                            "20.207.82.86",
+                            "20.207.86.8",
+                            "20.207.86.20",
+                            "20.204.225.124",
+                            "20.204.225.195",
+                            "20.204.216.70",
+                            "20.204.219.52",
+                            "20.204.223.59",
+                            "20.204.223.206",
+                            "20.204.223.40",
+                            "20.207.104.35",
+                            "20.207.104.51",
+                            "20.207.104.68",
+                            "20.207.104.100",
+                            "20.207.105.49",
+                            "20.204.221.132",
+                            "20.207.105.67",
+                            "20.204.223.52",
+                            "20.204.223.102",
+                            "20.207.105.105",
+                            "20.192.170.10"
+                        ],
+                        "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                        "resource_group_name": "webapp_g1",
+                        "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                        "site_config": [
+                            {
+                                "always_on": false,
+                                "api_definition_url": "",
+                                "api_management_api_id": "",
+                                "app_command_line": "",
+                                "application_stack": [
+                                    {
+                                        "docker_image": "",
+                                        "docker_image_tag": "",
+                                        "dotnet_version": "6.0",
+                                        "java_server": "",
+                                        "java_server_version": "",
+                                        "java_version": "",
+                                        "node_version": "",
+                                        "php_version": "",
+                                        "python_version": "",
+                                        "ruby_version": ""
+                                    }
+                                ],
+                                "auto_heal_enabled": false,
+                                "auto_heal_setting": [],
+                                "container_registry_managed_identity_client_id": "",
+                                "container_registry_use_managed_identity": false,
+                                "cors": [],
+                                "default_documents": [
+                                    "Default.htm",
+                                    "Default.html",
+                                    "Default.asp",
+                                    "index.htm",
+                                    "index.html",
+                                    "iisstart.htm",
+                                    "default.aspx",
+                                    "index.php",
+                                    "hostingstart.html"
+                                ],
+                                "detailed_error_logging_enabled": false,
+                                "ftps_state": "Disabled",
+                                "health_check_eviction_time_in_min": 0,
+                                "health_check_path": "",
+                                "http2_enabled": false,
+                                "ip_restriction": [],
+                                "linux_fx_version": "DOTNETCORE|6.0",
+                                "load_balancing_mode": "LeastRequests",
+                                "local_mysql_enabled": false,
+                                "managed_pipeline_mode": "Integrated",
+                                "minimum_tls_version": "1.2",
+                                "remote_debugging_enabled": false,
+                                "remote_debugging_version": "VS2019",
+                                "scm_ip_restriction": [],
+                                "scm_minimum_tls_version": "1.2",
+                                "scm_type": "None",
+                                "scm_use_main_ip_restriction": false,
+                                "use_32_bit_worker": true,
+                                "vnet_route_all_enabled": false,
+                                "websockets_enabled": false,
+                                "worker_count": 1
+                            }
+                        ],
+                        "site_credential": [
+                            {
+                                "name": "$wepappservice",
+                                "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                            }
+                        ],
+                        "sticky_settings": [],
+                        "storage_account": [],
+                        "tags": {},
+                        "timeouts": null,
+                        "virtual_network_subnet_id": "",
+                        "zip_deploy_file": ""
+                    },
+                    "sensitive_values": {
+                        "app_settings": {},
+                        "auth_settings": [
+                            {
+                                "active_directory": [],
+                                "additional_login_parameters": {},
+                                "allowed_external_redirect_urls": [],
+                                "facebook": [],
+                                "github": [],
+                                "google": [],
+                                "microsoft": [],
+                                "twitter": []
+                            }
+                        ],
+                        "backup": [],
+                        "connection_string": [],
+                        "identity": [],
+                        "logs": [],
+                        "outbound_ip_address_list": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ],
+                        "possible_outbound_ip_address_list": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                        ],
+                        "site_config": [
+                            {
+                                "application_stack": [
+                                    {}
+                                ],
+                                "auto_heal_setting": [],
+                                "cors": [],
+                                "default_documents": [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false
+                                ],
+                                "ip_restriction": [],
+                                "scm_ip_restriction": []
+                            }
+                        ],
+                        "site_credential": [
+                            {}
+                        ],
+                        "sticky_settings": [],
+                        "storage_account": [],
+                        "tags": {}
+                    }
+                },
+                {
+                    "address": "azurerm_resource_group.rg",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "rg",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                        "location": "centralindia",
+                        "name": "webapp_g1",
+                        "tags": {},
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "tags": {}
+                    }
+                },
+                {
+                    "address": "azurerm_service_plan.plan",
+                    "mode": "managed",
+                    "type": "azurerm_service_plan",
+                    "name": "plan",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "app_service_environment_id": "",
+                        "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                        "kind": "linux",
+                        "location": "centralindia",
+                        "maximum_elastic_worker_count": 1,
+                        "name": "webappplan",
+                        "os_type": "Linux",
+                        "per_site_scaling_enabled": false,
+                        "reserved": true,
+                        "resource_group_name": "webapp_g1",
+                        "sku_name": "S1",
+                        "tags": {},
+                        "timeouts": null,
+                        "worker_count": 1,
+                        "zone_balancing_enabled": false
+                    },
+                    "sensitive_values": {
+                        "tags": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_drift": [
+        {
+            "address": "azurerm_linux_web_app.app",
+            "mode": "managed",
+            "type": "azurerm_linux_web_app",
+            "name": "app",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "update"
+                ],
+                "before": {
+                    "app_settings": {
+                        "SOME_KEY": "some-value"
+                    },
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "default_provider": "",
+                            "enabled": false,
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "issuer": "",
+                            "microsoft": [],
+                            "runtime_version": "",
+                            "token_refresh_extension_hours": 0,
+                            "token_store_enabled": false,
+                            "twitter": [],
+                            "unauthenticated_client_action": ""
+                        }
+                    ],
+                    "backup": [],
+                    "client_affinity_enabled": false,
+                    "client_certificate_enabled": false,
+                    "client_certificate_mode": "Required",
+                    "connection_string": [],
+                    "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                    "default_hostname": "wepappservice.azurewebsites.net",
+                    "enabled": true,
+                    "https_only": false,
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                    "identity": [],
+                    "key_vault_reference_identity_id": "SystemAssigned",
+                    "kind": "app,linux",
+                    "location": "centralindia",
+                    "logs": [],
+                    "name": "wepappservice",
+                    "outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.192.170.10"
+                    ],
+                    "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                    "possible_outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.207.86.20",
+                        "20.204.225.124",
+                        "20.204.225.195",
+                        "20.204.216.70",
+                        "20.204.219.52",
+                        "20.204.223.59",
+                        "20.204.223.206",
+                        "20.204.223.40",
+                        "20.207.104.35",
+                        "20.207.104.51",
+                        "20.207.104.68",
+                        "20.207.104.100",
+                        "20.207.105.49",
+                        "20.204.221.132",
+                        "20.207.105.67",
+                        "20.204.223.52",
+                        "20.204.223.102",
+                        "20.207.105.105",
+                        "20.192.170.10"
+                    ],
+                    "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                    "resource_group_name": "webapp_g1",
+                    "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "site_config": [
+                        {
+                            "always_on": false,
+                            "api_definition_url": "",
+                            "api_management_api_id": "",
+                            "app_command_line": "",
+                            "application_stack": [
+                                {
+                                    "docker_image": "",
+                                    "docker_image_tag": "",
+                                    "dotnet_version": "6.0",
+                                    "java_server": "",
+                                    "java_server_version": "",
+                                    "java_version": "",
+                                    "node_version": "",
+                                    "php_version": "",
+                                    "python_version": "",
+                                    "ruby_version": ""
+                                }
+                            ],
+                            "auto_heal_enabled": false,
+                            "auto_heal_setting": [],
+                            "container_registry_managed_identity_client_id": "",
+                            "container_registry_use_managed_identity": false,
+                            "cors": [],
+                            "default_documents": [
+                                "Default.htm",
+                                "Default.html",
+                                "Default.asp",
+                                "index.htm",
+                                "index.html",
+                                "iisstart.htm",
+                                "default.aspx",
+                                "index.php",
+                                "hostingstart.html"
+                            ],
+                            "detailed_error_logging_enabled": false,
+                            "ftps_state": "Disabled",
+                            "health_check_eviction_time_in_min": 0,
+                            "health_check_path": "",
+                            "http2_enabled": false,
+                            "ip_restriction": [],
+                            "linux_fx_version": "DOTNETCORE|6.0",
+                            "load_balancing_mode": "LeastRequests",
+                            "local_mysql_enabled": false,
+                            "managed_pipeline_mode": "Integrated",
+                            "minimum_tls_version": "1.2",
+                            "remote_debugging_enabled": false,
+                            "remote_debugging_version": "VS2019",
+                            "scm_ip_restriction": [],
+                            "scm_minimum_tls_version": "1.2",
+                            "scm_type": "None",
+                            "scm_use_main_ip_restriction": false,
+                            "use_32_bit_worker": true,
+                            "vnet_route_all_enabled": false,
+                            "websockets_enabled": false,
+                            "worker_count": 1
+                        }
+                    ],
+                    "site_credential": [
+                        {
+                            "name": "$wepappservice",
+                            "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                        }
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": null,
+                    "timeouts": null,
+                    "virtual_network_subnet_id": "",
+                    "zip_deploy_file": ""
+                },
+                "after": {
+                    "app_settings": {
+                        "SOME_KEY": "some-value"
+                    },
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "default_provider": "",
+                            "enabled": false,
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "issuer": "",
+                            "microsoft": [],
+                            "runtime_version": "",
+                            "token_refresh_extension_hours": 0,
+                            "token_store_enabled": false,
+                            "twitter": [],
+                            "unauthenticated_client_action": ""
+                        }
+                    ],
+                    "backup": [],
+                    "client_affinity_enabled": false,
+                    "client_certificate_enabled": false,
+                    "client_certificate_mode": "Required",
+                    "connection_string": [],
+                    "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                    "default_hostname": "wepappservice.azurewebsites.net",
+                    "enabled": true,
+                    "https_only": false,
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                    "identity": [],
+                    "key_vault_reference_identity_id": "SystemAssigned",
+                    "kind": "app,linux",
+                    "location": "centralindia",
+                    "logs": [],
+                    "name": "wepappservice",
+                    "outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.192.170.10"
+                    ],
+                    "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                    "possible_outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.207.86.20",
+                        "20.204.225.124",
+                        "20.204.225.195",
+                        "20.204.216.70",
+                        "20.204.219.52",
+                        "20.204.223.59",
+                        "20.204.223.206",
+                        "20.204.223.40",
+                        "20.207.104.35",
+                        "20.207.104.51",
+                        "20.207.104.68",
+                        "20.207.104.100",
+                        "20.207.105.49",
+                        "20.204.221.132",
+                        "20.207.105.67",
+                        "20.204.223.52",
+                        "20.204.223.102",
+                        "20.207.105.105",
+                        "20.192.170.10"
+                    ],
+                    "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                    "resource_group_name": "webapp_g1",
+                    "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "site_config": [
+                        {
+                            "always_on": false,
+                            "api_definition_url": "",
+                            "api_management_api_id": "",
+                            "app_command_line": "",
+                            "application_stack": [
+                                {
+                                    "docker_image": "",
+                                    "docker_image_tag": "",
+                                    "dotnet_version": "6.0",
+                                    "java_server": "",
+                                    "java_server_version": "",
+                                    "java_version": "",
+                                    "node_version": "",
+                                    "php_version": "",
+                                    "python_version": "",
+                                    "ruby_version": ""
+                                }
+                            ],
+                            "auto_heal_enabled": false,
+                            "auto_heal_setting": [],
+                            "container_registry_managed_identity_client_id": "",
+                            "container_registry_use_managed_identity": false,
+                            "cors": [],
+                            "default_documents": [
+                                "Default.htm",
+                                "Default.html",
+                                "Default.asp",
+                                "index.htm",
+                                "index.html",
+                                "iisstart.htm",
+                                "default.aspx",
+                                "index.php",
+                                "hostingstart.html"
+                            ],
+                            "detailed_error_logging_enabled": false,
+                            "ftps_state": "Disabled",
+                            "health_check_eviction_time_in_min": 0,
+                            "health_check_path": "",
+                            "http2_enabled": false,
+                            "ip_restriction": [],
+                            "linux_fx_version": "DOTNETCORE|6.0",
+                            "load_balancing_mode": "LeastRequests",
+                            "local_mysql_enabled": false,
+                            "managed_pipeline_mode": "Integrated",
+                            "minimum_tls_version": "1.2",
+                            "remote_debugging_enabled": false,
+                            "remote_debugging_version": "VS2019",
+                            "scm_ip_restriction": [],
+                            "scm_minimum_tls_version": "1.2",
+                            "scm_type": "None",
+                            "scm_use_main_ip_restriction": false,
+                            "use_32_bit_worker": true,
+                            "vnet_route_all_enabled": false,
+                            "websockets_enabled": false,
+                            "worker_count": 1
+                        }
+                    ],
+                    "site_credential": [
+                        {
+                            "name": "$wepappservice",
+                            "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                        }
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {},
+                    "timeouts": null,
+                    "virtual_network_subnet_id": "",
+                    "zip_deploy_file": ""
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "app_settings": {},
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "microsoft": [],
+                            "twitter": []
+                        }
+                    ],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "identity": [],
+                    "logs": [],
+                    "outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "possible_outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "site_config": [
+                        {
+                            "application_stack": [
+                                {}
+                            ],
+                            "auto_heal_setting": [],
+                            "cors": [],
+                            "default_documents": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "ip_restriction": [],
+                            "scm_ip_restriction": []
+                        }
+                    ],
+                    "site_credential": [
+                        {}
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": []
+                },
+                "after_sensitive": {
+                    "app_settings": {},
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "microsoft": [],
+                            "twitter": []
+                        }
+                    ],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "identity": [],
+                    "logs": [],
+                    "outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "possible_outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "site_config": [
+                        {
+                            "application_stack": [
+                                {}
+                            ],
+                            "auto_heal_setting": [],
+                            "cors": [],
+                            "default_documents": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "ip_restriction": [],
+                            "scm_ip_restriction": []
+                        }
+                    ],
+                    "site_credential": [
+                        {}
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {}
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.rg",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "rg",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "update"
+                ],
+                "before": {
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                    "location": "centralindia",
+                    "name": "webapp_g1",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after": {
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                    "location": "centralindia",
+                    "name": "webapp_g1",
+                    "tags": {},
+                    "timeouts": null
+                },
+                "after_unknown": {},
+                "before_sensitive": {},
+                "after_sensitive": {
+                    "tags": {}
+                }
+            }
+        },
+        {
+            "address": "azurerm_service_plan.plan",
+            "mode": "managed",
+            "type": "azurerm_service_plan",
+            "name": "plan",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "update"
+                ],
+                "before": {
+                    "app_service_environment_id": "",
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "kind": "linux",
+                    "location": "centralindia",
+                    "maximum_elastic_worker_count": 1,
+                    "name": "webappplan",
+                    "os_type": "Linux",
+                    "per_site_scaling_enabled": false,
+                    "reserved": true,
+                    "resource_group_name": "webapp_g1",
+                    "sku_name": "S1",
+                    "tags": null,
+                    "timeouts": null,
+                    "worker_count": 1,
+                    "zone_balancing_enabled": false
+                },
+                "after": {
+                    "app_service_environment_id": "",
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "kind": "linux",
+                    "location": "centralindia",
+                    "maximum_elastic_worker_count": 1,
+                    "name": "webappplan",
+                    "os_type": "Linux",
+                    "per_site_scaling_enabled": false,
+                    "reserved": true,
+                    "resource_group_name": "webapp_g1",
+                    "sku_name": "S1",
+                    "tags": {},
+                    "timeouts": null,
+                    "worker_count": 1,
+                    "zone_balancing_enabled": false
+                },
+                "after_unknown": {},
+                "before_sensitive": {},
+                "after_sensitive": {
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "resource_changes": [
+        {
+            "address": "azurerm_linux_web_app.app",
+            "mode": "managed",
+            "type": "azurerm_linux_web_app",
+            "name": "app",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "no-op"
+                ],
+                "before": {
+                    "app_settings": {
+                        "SOME_KEY": "some-value"
+                    },
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "default_provider": "",
+                            "enabled": false,
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "issuer": "",
+                            "microsoft": [],
+                            "runtime_version": "",
+                            "token_refresh_extension_hours": 0,
+                            "token_store_enabled": false,
+                            "twitter": [],
+                            "unauthenticated_client_action": ""
+                        }
+                    ],
+                    "backup": [],
+                    "client_affinity_enabled": false,
+                    "client_certificate_enabled": false,
+                    "client_certificate_mode": "Required",
+                    "connection_string": [],
+                    "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                    "default_hostname": "wepappservice.azurewebsites.net",
+                    "enabled": true,
+                    "https_only": false,
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                    "identity": [],
+                    "key_vault_reference_identity_id": "SystemAssigned",
+                    "kind": "app,linux",
+                    "location": "centralindia",
+                    "logs": [],
+                    "name": "wepappservice",
+                    "outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.192.170.10"
+                    ],
+                    "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                    "possible_outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.207.86.20",
+                        "20.204.225.124",
+                        "20.204.225.195",
+                        "20.204.216.70",
+                        "20.204.219.52",
+                        "20.204.223.59",
+                        "20.204.223.206",
+                        "20.204.223.40",
+                        "20.207.104.35",
+                        "20.207.104.51",
+                        "20.207.104.68",
+                        "20.207.104.100",
+                        "20.207.105.49",
+                        "20.204.221.132",
+                        "20.207.105.67",
+                        "20.204.223.52",
+                        "20.204.223.102",
+                        "20.207.105.105",
+                        "20.192.170.10"
+                    ],
+                    "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                    "resource_group_name": "webapp_g1",
+                    "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "site_config": [
+                        {
+                            "always_on": false,
+                            "api_definition_url": "",
+                            "api_management_api_id": "",
+                            "app_command_line": "",
+                            "application_stack": [
+                                {
+                                    "docker_image": "",
+                                    "docker_image_tag": "",
+                                    "dotnet_version": "6.0",
+                                    "java_server": "",
+                                    "java_server_version": "",
+                                    "java_version": "",
+                                    "node_version": "",
+                                    "php_version": "",
+                                    "python_version": "",
+                                    "ruby_version": ""
+                                }
+                            ],
+                            "auto_heal_enabled": false,
+                            "auto_heal_setting": [],
+                            "container_registry_managed_identity_client_id": "",
+                            "container_registry_use_managed_identity": false,
+                            "cors": [],
+                            "default_documents": [
+                                "Default.htm",
+                                "Default.html",
+                                "Default.asp",
+                                "index.htm",
+                                "index.html",
+                                "iisstart.htm",
+                                "default.aspx",
+                                "index.php",
+                                "hostingstart.html"
+                            ],
+                            "detailed_error_logging_enabled": false,
+                            "ftps_state": "Disabled",
+                            "health_check_eviction_time_in_min": 0,
+                            "health_check_path": "",
+                            "http2_enabled": false,
+                            "ip_restriction": [],
+                            "linux_fx_version": "DOTNETCORE|6.0",
+                            "load_balancing_mode": "LeastRequests",
+                            "local_mysql_enabled": false,
+                            "managed_pipeline_mode": "Integrated",
+                            "minimum_tls_version": "1.2",
+                            "remote_debugging_enabled": false,
+                            "remote_debugging_version": "VS2019",
+                            "scm_ip_restriction": [],
+                            "scm_minimum_tls_version": "1.2",
+                            "scm_type": "None",
+                            "scm_use_main_ip_restriction": false,
+                            "use_32_bit_worker": true,
+                            "vnet_route_all_enabled": false,
+                            "websockets_enabled": false,
+                            "worker_count": 1
+                        }
+                    ],
+                    "site_credential": [
+                        {
+                            "name": "$wepappservice",
+                            "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                        }
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {},
+                    "timeouts": null,
+                    "virtual_network_subnet_id": "",
+                    "zip_deploy_file": ""
+                },
+                "after": {
+                    "app_settings": {
+                        "SOME_KEY": "some-value"
+                    },
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "default_provider": "",
+                            "enabled": false,
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "issuer": "",
+                            "microsoft": [],
+                            "runtime_version": "",
+                            "token_refresh_extension_hours": 0,
+                            "token_store_enabled": false,
+                            "twitter": [],
+                            "unauthenticated_client_action": ""
+                        }
+                    ],
+                    "backup": [],
+                    "client_affinity_enabled": false,
+                    "client_certificate_enabled": false,
+                    "client_certificate_mode": "Required",
+                    "connection_string": [],
+                    "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                    "default_hostname": "wepappservice.azurewebsites.net",
+                    "enabled": true,
+                    "https_only": false,
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                    "identity": [],
+                    "key_vault_reference_identity_id": "SystemAssigned",
+                    "kind": "app,linux",
+                    "location": "centralindia",
+                    "logs": [],
+                    "name": "wepappservice",
+                    "outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.192.170.10"
+                    ],
+                    "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                    "possible_outbound_ip_address_list": [
+                        "20.207.85.205",
+                        "20.204.225.3",
+                        "20.207.85.101",
+                        "20.207.85.252",
+                        "20.207.82.86",
+                        "20.207.86.8",
+                        "20.207.86.20",
+                        "20.204.225.124",
+                        "20.204.225.195",
+                        "20.204.216.70",
+                        "20.204.219.52",
+                        "20.204.223.59",
+                        "20.204.223.206",
+                        "20.204.223.40",
+                        "20.207.104.35",
+                        "20.207.104.51",
+                        "20.207.104.68",
+                        "20.207.104.100",
+                        "20.207.105.49",
+                        "20.204.221.132",
+                        "20.207.105.67",
+                        "20.204.223.52",
+                        "20.204.223.102",
+                        "20.207.105.105",
+                        "20.192.170.10"
+                    ],
+                    "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                    "resource_group_name": "webapp_g1",
+                    "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "site_config": [
+                        {
+                            "always_on": false,
+                            "api_definition_url": "",
+                            "api_management_api_id": "",
+                            "app_command_line": "",
+                            "application_stack": [
+                                {
+                                    "docker_image": "",
+                                    "docker_image_tag": "",
+                                    "dotnet_version": "6.0",
+                                    "java_server": "",
+                                    "java_server_version": "",
+                                    "java_version": "",
+                                    "node_version": "",
+                                    "php_version": "",
+                                    "python_version": "",
+                                    "ruby_version": ""
+                                }
+                            ],
+                            "auto_heal_enabled": false,
+                            "auto_heal_setting": [],
+                            "container_registry_managed_identity_client_id": "",
+                            "container_registry_use_managed_identity": false,
+                            "cors": [],
+                            "default_documents": [
+                                "Default.htm",
+                                "Default.html",
+                                "Default.asp",
+                                "index.htm",
+                                "index.html",
+                                "iisstart.htm",
+                                "default.aspx",
+                                "index.php",
+                                "hostingstart.html"
+                            ],
+                            "detailed_error_logging_enabled": false,
+                            "ftps_state": "Disabled",
+                            "health_check_eviction_time_in_min": 0,
+                            "health_check_path": "",
+                            "http2_enabled": false,
+                            "ip_restriction": [],
+                            "linux_fx_version": "DOTNETCORE|6.0",
+                            "load_balancing_mode": "LeastRequests",
+                            "local_mysql_enabled": false,
+                            "managed_pipeline_mode": "Integrated",
+                            "minimum_tls_version": "1.2",
+                            "remote_debugging_enabled": false,
+                            "remote_debugging_version": "VS2019",
+                            "scm_ip_restriction": [],
+                            "scm_minimum_tls_version": "1.2",
+                            "scm_type": "None",
+                            "scm_use_main_ip_restriction": false,
+                            "use_32_bit_worker": true,
+                            "vnet_route_all_enabled": false,
+                            "websockets_enabled": false,
+                            "worker_count": 1
+                        }
+                    ],
+                    "site_credential": [
+                        {
+                            "name": "$wepappservice",
+                            "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                        }
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {},
+                    "timeouts": null,
+                    "virtual_network_subnet_id": "",
+                    "zip_deploy_file": ""
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "app_settings": {},
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "microsoft": [],
+                            "twitter": []
+                        }
+                    ],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "identity": [],
+                    "logs": [],
+                    "outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "possible_outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "site_config": [
+                        {
+                            "application_stack": [
+                                {}
+                            ],
+                            "auto_heal_setting": [],
+                            "cors": [],
+                            "default_documents": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "ip_restriction": [],
+                            "scm_ip_restriction": []
+                        }
+                    ],
+                    "site_credential": [
+                        {}
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {}
+                },
+                "after_sensitive": {
+                    "app_settings": {},
+                    "auth_settings": [
+                        {
+                            "active_directory": [],
+                            "additional_login_parameters": {},
+                            "allowed_external_redirect_urls": [],
+                            "facebook": [],
+                            "github": [],
+                            "google": [],
+                            "microsoft": [],
+                            "twitter": []
+                        }
+                    ],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "identity": [],
+                    "logs": [],
+                    "outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "possible_outbound_ip_address_list": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                    ],
+                    "site_config": [
+                        {
+                            "application_stack": [
+                                {}
+                            ],
+                            "auto_heal_setting": [],
+                            "cors": [],
+                            "default_documents": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "ip_restriction": [],
+                            "scm_ip_restriction": []
+                        }
+                    ],
+                    "site_credential": [
+                        {}
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {}
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.rg",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "rg",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "no-op"
+                ],
+                "before": {
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                    "location": "centralindia",
+                    "name": "webapp_g1",
+                    "tags": {},
+                    "timeouts": null
+                },
+                "after": {
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                    "location": "centralindia",
+                    "name": "webapp_g1",
+                    "tags": {},
+                    "timeouts": null
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "tags": {}
+                },
+                "after_sensitive": {
+                    "tags": {}
+                }
+            }
+        },
+        {
+            "address": "azurerm_service_plan.plan",
+            "mode": "managed",
+            "type": "azurerm_service_plan",
+            "name": "plan",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "no-op"
+                ],
+                "before": {
+                    "app_service_environment_id": "",
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "kind": "linux",
+                    "location": "centralindia",
+                    "maximum_elastic_worker_count": 1,
+                    "name": "webappplan",
+                    "os_type": "Linux",
+                    "per_site_scaling_enabled": false,
+                    "reserved": true,
+                    "resource_group_name": "webapp_g1",
+                    "sku_name": "S1",
+                    "tags": {},
+                    "timeouts": null,
+                    "worker_count": 1,
+                    "zone_balancing_enabled": false
+                },
+                "after": {
+                    "app_service_environment_id": "",
+                    "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                    "kind": "linux",
+                    "location": "centralindia",
+                    "maximum_elastic_worker_count": 1,
+                    "name": "webappplan",
+                    "os_type": "Linux",
+                    "per_site_scaling_enabled": false,
+                    "reserved": true,
+                    "resource_group_name": "webapp_g1",
+                    "sku_name": "S1",
+                    "tags": {},
+                    "timeouts": null,
+                    "worker_count": 1,
+                    "zone_balancing_enabled": false
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "tags": {}
+                },
+                "after_sensitive": {
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.2.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "azurerm_linux_web_app.app",
+                        "mode": "managed",
+                        "type": "azurerm_linux_web_app",
+                        "name": "app",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "app_settings": {
+                                "SOME_KEY": "some-value"
+                            },
+                            "auth_settings": [
+                                {
+                                    "active_directory": [],
+                                    "additional_login_parameters": {},
+                                    "allowed_external_redirect_urls": [],
+                                    "default_provider": "",
+                                    "enabled": false,
+                                    "facebook": [],
+                                    "github": [],
+                                    "google": [],
+                                    "issuer": "",
+                                    "microsoft": [],
+                                    "runtime_version": "",
+                                    "token_refresh_extension_hours": 0,
+                                    "token_store_enabled": false,
+                                    "twitter": [],
+                                    "unauthenticated_client_action": ""
+                                }
+                            ],
+                            "backup": [],
+                            "client_affinity_enabled": false,
+                            "client_certificate_enabled": false,
+                            "client_certificate_mode": "Required",
+                            "connection_string": [],
+                            "custom_domain_verification_id": "0F2D430A00B672896D24A03ECF00AEF966318952BC2043E8FA39D33D55C32CC8",
+                            "default_hostname": "wepappservice.azurewebsites.net",
+                            "enabled": true,
+                            "https_only": false,
+                            "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/sites/wepappservice",
+                            "identity": [],
+                            "key_vault_reference_identity_id": "SystemAssigned",
+                            "kind": "app,linux",
+                            "location": "centralindia",
+                            "logs": [],
+                            "name": "wepappservice",
+                            "outbound_ip_address_list": [
+                                "20.207.85.205",
+                                "20.204.225.3",
+                                "20.207.85.101",
+                                "20.207.85.252",
+                                "20.207.82.86",
+                                "20.207.86.8",
+                                "20.192.170.10"
+                            ],
+                            "outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.192.170.10",
+                            "possible_outbound_ip_address_list": [
+                                "20.207.85.205",
+                                "20.204.225.3",
+                                "20.207.85.101",
+                                "20.207.85.252",
+                                "20.207.82.86",
+                                "20.207.86.8",
+                                "20.207.86.20",
+                                "20.204.225.124",
+                                "20.204.225.195",
+                                "20.204.216.70",
+                                "20.204.219.52",
+                                "20.204.223.59",
+                                "20.204.223.206",
+                                "20.204.223.40",
+                                "20.207.104.35",
+                                "20.207.104.51",
+                                "20.207.104.68",
+                                "20.207.104.100",
+                                "20.207.105.49",
+                                "20.204.221.132",
+                                "20.207.105.67",
+                                "20.204.223.52",
+                                "20.204.223.102",
+                                "20.207.105.105",
+                                "20.192.170.10"
+                            ],
+                            "possible_outbound_ip_addresses": "20.207.85.205,20.204.225.3,20.207.85.101,20.207.85.252,20.207.82.86,20.207.86.8,20.207.86.20,20.204.225.124,20.204.225.195,20.204.216.70,20.204.219.52,20.204.223.59,20.204.223.206,20.204.223.40,20.207.104.35,20.207.104.51,20.207.104.68,20.207.104.100,20.207.105.49,20.204.221.132,20.207.105.67,20.204.223.52,20.204.223.102,20.207.105.105,20.192.170.10",
+                            "resource_group_name": "webapp_g1",
+                            "service_plan_id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                            "site_config": [
+                                {
+                                    "always_on": false,
+                                    "api_definition_url": "",
+                                    "api_management_api_id": "",
+                                    "app_command_line": "",
+                                    "application_stack": [
+                                        {
+                                            "docker_image": "",
+                                            "docker_image_tag": "",
+                                            "dotnet_version": "6.0",
+                                            "java_server": "",
+                                            "java_server_version": "",
+                                            "java_version": "",
+                                            "node_version": "",
+                                            "php_version": "",
+                                            "python_version": "",
+                                            "ruby_version": ""
+                                        }
+                                    ],
+                                    "auto_heal_enabled": false,
+                                    "auto_heal_setting": [],
+                                    "container_registry_managed_identity_client_id": "",
+                                    "container_registry_use_managed_identity": false,
+                                    "cors": [],
+                                    "default_documents": [
+                                        "Default.htm",
+                                        "Default.html",
+                                        "Default.asp",
+                                        "index.htm",
+                                        "index.html",
+                                        "iisstart.htm",
+                                        "default.aspx",
+                                        "index.php",
+                                        "hostingstart.html"
+                                    ],
+                                    "detailed_error_logging_enabled": false,
+                                    "ftps_state": "Disabled",
+                                    "health_check_eviction_time_in_min": 0,
+                                    "health_check_path": "",
+                                    "http2_enabled": false,
+                                    "ip_restriction": [],
+                                    "linux_fx_version": "DOTNETCORE|6.0",
+                                    "load_balancing_mode": "LeastRequests",
+                                    "local_mysql_enabled": false,
+                                    "managed_pipeline_mode": "Integrated",
+                                    "minimum_tls_version": "1.2",
+                                    "remote_debugging_enabled": false,
+                                    "remote_debugging_version": "VS2019",
+                                    "scm_ip_restriction": [],
+                                    "scm_minimum_tls_version": "1.2",
+                                    "scm_type": "None",
+                                    "scm_use_main_ip_restriction": false,
+                                    "use_32_bit_worker": true,
+                                    "vnet_route_all_enabled": false,
+                                    "websockets_enabled": false,
+                                    "worker_count": 1
+                                }
+                            ],
+                            "site_credential": [
+                                {
+                                    "name": "$wepappservice",
+                                    "password": "HrpcqybBX1o7NHchW364aooXHmHkpua9JXlSarQqdDAFeqClLoam29g2LpHg"
+                                }
+                            ],
+                            "sticky_settings": [],
+                            "storage_account": [],
+                            "tags": {},
+                            "timeouts": null,
+                            "virtual_network_subnet_id": "",
+                            "zip_deploy_file": ""
+                        },
+                        "sensitive_values": {
+                            "app_settings": {},
+                            "auth_settings": [
+                                {
+                                    "active_directory": [],
+                                    "additional_login_parameters": {},
+                                    "allowed_external_redirect_urls": [],
+                                    "facebook": [],
+                                    "github": [],
+                                    "google": [],
+                                    "microsoft": [],
+                                    "twitter": []
+                                }
+                            ],
+                            "backup": [],
+                            "connection_string": [],
+                            "identity": [],
+                            "logs": [],
+                            "outbound_ip_address_list": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "possible_outbound_ip_address_list": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "site_config": [
+                                {
+                                    "application_stack": [
+                                        {}
+                                    ],
+                                    "auto_heal_setting": [],
+                                    "cors": [],
+                                    "default_documents": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "ip_restriction": [],
+                                    "scm_ip_restriction": []
+                                }
+                            ],
+                            "site_credential": [
+                                {}
+                            ],
+                            "sticky_settings": [],
+                            "storage_account": [],
+                            "tags": {}
+                        },
+                        "depends_on": [
+                            "azurerm_resource_group.rg",
+                            "azurerm_service_plan.plan"
+                        ]
+                    },
+                    {
+                        "address": "azurerm_resource_group.rg",
+                        "mode": "managed",
+                        "type": "azurerm_resource_group",
+                        "name": "rg",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1",
+                            "location": "centralindia",
+                            "name": "webapp_g1",
+                            "tags": {},
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "azurerm_service_plan.plan",
+                        "mode": "managed",
+                        "type": "azurerm_service_plan",
+                        "name": "plan",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "app_service_environment_id": "",
+                            "id": "/subscriptions/727569fb-5294-4ca5-9005-466abf5d33f1/resourceGroups/webapp_g1/providers/Microsoft.Web/serverfarms/webappplan",
+                            "kind": "linux",
+                            "location": "centralindia",
+                            "maximum_elastic_worker_count": 1,
+                            "name": "webappplan",
+                            "os_type": "Linux",
+                            "per_site_scaling_enabled": false,
+                            "reserved": true,
+                            "resource_group_name": "webapp_g1",
+                            "sku_name": "S1",
+                            "tags": {},
+                            "timeouts": null,
+                            "worker_count": 1,
+                            "zone_balancing_enabled": false
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        },
+                        "depends_on": [
+                            "azurerm_resource_group.rg"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.18.0",
+                "expressions": {
+                    "client_id": {
+                        "constant_value": "ca907e21-0e0d-4865-b86b-76b747e9fc86"
+                    },
+                    "client_secret": {
+                        "constant_value": "1nc8Q~zCNLGTEfmklHur3FjMkeCszQI-_hQurbvV"
+                    },
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "727569fb-5294-4ca5-9005-466abf5d33f1"
+                    },
+                    "tenant_id": {
+                        "constant_value": "665b6c62-7310-4d39-9abb-32a0cbc3b90f"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_linux_web_app.app",
+                    "mode": "managed",
+                    "type": "azurerm_linux_web_app",
+                    "name": "app",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "app_settings": {
+                            "constant_value": {
+                                "SOME_KEY": "some-value"
+                            }
+                        },
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.rg.location",
+                                "azurerm_resource_group.rg"
+                            ]
+                        },
+                        "name": {
+                            "references": [
+                                "var.web_service"
+                            ]
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.rg.name",
+                                "azurerm_resource_group.rg"
+                            ]
+                        },
+                        "service_plan_id": {
+                            "references": [
+                                "azurerm_service_plan.plan.id",
+                                "azurerm_service_plan.plan"
+                            ]
+                        },
+                        "site_config": [
+                            {
+                                "always_on": {
+                                    "constant_value": false
+                                },
+                                "application_stack": [
+                                    {
+                                        "dotnet_version": {
+                                            "constant_value": "6.0"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_resource_group.rg",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "rg",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "references": [
+                                "var.location"
+                            ]
+                        },
+                        "name": {
+                            "references": [
+                                "var.rg_name"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_service_plan.plan",
+                    "mode": "managed",
+                    "type": "azurerm_service_plan",
+                    "name": "plan",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.rg.location",
+                                "azurerm_resource_group.rg"
+                            ]
+                        },
+                        "name": {
+                            "references": [
+                                "var.app_service_plan"
+                            ]
+                        },
+                        "os_type": {
+                            "constant_value": "Linux"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.rg.name",
+                                "azurerm_resource_group.rg"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "S1"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ],
+            "variables": {
+                "app_service_plan": {},
+                "location": {},
+                "rg_name": {},
+                "web_service": {}
+            }
+        }
+    }
+}

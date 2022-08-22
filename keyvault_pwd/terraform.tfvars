@@ -1,0 +1,5 @@
+resource_group_name = "key-vault"
+location            = "central india"
+keyvault_name       = "keyvault01"
+secret_name         = "keyvault-secret"
+secret_value        = "@Am012345678!"
