@@ -1,0 +1,7 @@
+resource_group_name    = "vm_with_bastion"
+location               = "central india"
+virtual_network_name   = "vnbast"
+subnet_name            = "subnetprod"
+public_ip_name         = "publicipbastion"
+network_interface_name = "nicbastion"
+windows_vm_name        = "windows10"
